@@ -17,7 +17,7 @@ div#carousel {
     
 }
 
-.btnDireito, .btnEsquerdo {
+#btnDireito, #btnEsquerdo {
     background-color: #1351d8;
     padding: 20px;
     font-size: 18px;

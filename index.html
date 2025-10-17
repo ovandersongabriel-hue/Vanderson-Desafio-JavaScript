@@ -31,12 +31,12 @@
     </header>
     <main>
         <div class="controle">
-            <button class="btnDireito">
+            <button id="btnDireito" onclick="Carousel.previous()">
                 <
             </button>
             <div id="carousel">
             </div>
-            <button class="btnEsquerdo">
+            <button id="btnEsquerdo" onclick="Carousel.escrever()">
                 >
             </button>
             
@@ -51,11 +51,7 @@
             Carousel.Start(carouselArr);
             
             
-            const btnDireito = document.getElementsByClassName('btnDireito')[0];
-            const btnEsquerdo = document.getElementsByClassName('btnEsquerdo')[0];
-
-            btnDireito.addEventListener('click', Carousel.next);
-            btnEsquerdo.addEventListener('click', Carousel.previous);               
+                         
 
         </script>
     </main>
