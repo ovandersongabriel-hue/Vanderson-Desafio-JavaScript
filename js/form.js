@@ -11,15 +11,14 @@ function Post(form) {
             form.elements.namedItem("cpf").value, 
             form.elements.namedItem("telefone").value, 
             form.elements.namedItem("contato").value);
-  
+    
+    console.log(data);
+    
+    form.resert();
+
+    alert(`Obrigado sr(a) ${data.nome} ${data.sobrenome}, os seus dados foram encaminhados com sucesso`);
+
+    return false;
+    
 }
 
-function Enviar() {
-
-    var nome = document.getElementById("nomeid");
-
-    if (nome.value != "") {
-        alert('Obrigado sr(a) ' + "Marcello Dias" + ' os seus dados foram encaminhados com sucesso');
-    }
-
-}
